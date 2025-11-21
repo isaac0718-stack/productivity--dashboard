@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Productivity Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Productivity Dashboard</h1>
+    <p class="subtitle">Track tasks & habits in clean dark mode</p>
+  </header>
+
+  <section class="container">
+    <!-- Task Manager -->
+    <div class="card">
+      <h2>Tasks</h2>
+      <div class="task-input">
+        <input type="text" id="taskInput" placeholder="Add new task..." />
+        <button onclick="addTask()">Add</button>
+      </div>
+      <ul id="taskList"></ul>
+    </div>
+
+    <!-- Habit Tracker -->
+    <div class="card">
+      <h2>Habit Tracker</h2>
+      <div id="habits">
+        <!-- habits inserted by JS -->
+      </div>
+    </div>
+
+    <!-- Daily Quote -->
+    <div class="card">
+      <h2>Daily Quote</h2>
+      <p id="quoteBox">Loading quote...</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
